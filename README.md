@@ -5,20 +5,13 @@ This is a SQL mini-project analysis of a learning platform on instructor credibi
 
 ## Table Structure
 
-Table Name: Students 
-Column: Student_id, Student_name, City, DOJ
-
-Table Name: Programs
-Column:	Program_id, Title, Category, Instructor_id, Rating
-
-Table Name: Instructors
-Column: Instructor_id, Instructor_name, Experience
-
-Table Name:  Enrolments
-Column: Enrolment_id, Student_id, Program_id, Date_enrolled, Status
-
-Table Name: Course Progress
-Column: Student_id, Program_id, Completion, Last_date_accessed
+| Table Name       | Columns |
+|------------------|---------|
+| Students         | Student_id, Student_name, City, DOJ |
+| Programs         | Program_id, Title, Category, Instructor_id, Rating |
+| Instructors      | Instructor_id, Instructor_name, Experience |
+| Enrolments       | Enrolment_id, Student_id, Program_id, Date_enrolled, Status |
+| Course Progress  | Student_id, Program_id, Completion, Last_date_accessed |
 
 ## Business Questions (Tasks)
 1.	List the top 10 students with the most completed courses.

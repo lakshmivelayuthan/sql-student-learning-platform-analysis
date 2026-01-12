@@ -4,41 +4,21 @@
 This is a SQL mini-project analysis of a learning platform on instructor credibility, candidate performance, program completion, and engagement patterns.
 
 ## Table Structure
-  Table Name:  Students 
-  Column 			    Description
--	Student_id		  Student’s Unique ID (INT) (PRIMARY KEY)
--	Student_name		Name of the student (VARCHAR(50))
--	City			      Student’s Location (VARCHAR(50))
--	DOJ			        Date of Joining (DATE)
 
-	Table Name:  Programs
-	Column			    Description
--	Program_id		  Unique ID (INT) (PRIMARY KEY)
--	Title			      Program Name (VARCHAR(50))
--	Category		    Domain (SQL, Python, ML) (VARCHAR(50))
--	Instructor_id		Instructor handling the program (INT)
--	Rating			    Rating of the program (INT)
+Table Name: Students 
+Column: Student_id, Student_name, City, DOJ
 
-	Table Name:  Instructors
-	Column			    Description
--	Instructor_id		Instructor handling the program (INT) (PRIMARY KEY)
--	Instructor_name	Name of the instructor (VARCHAR(50))
--	Experience		  Years of teaching experience (INT)
+Table Name: Programs
+Column:	Program_id, Title, Category, Instructor_id, Rating
 
-	Table Name:  Enrolments
-	Column			    Description
--	Enrolment_id		Unique ID (INT) (PRIMARY KEY)	
--	Student_id		  Student’s Unique ID (INT) (FOREIGN KEY)
--	Program_id		  Unique ID (INT) (FOREIGN KEY)
--	Date_enrolled		Date of Enrolment (DATE)
--	Status			    “Enrolled”,”In Progress”,”Completed”,”Discontinued”
+Table Name: Instructors
+Column: Instructor_id, Instructor_name, Experience
 
-	Table Name – Course Progress
-	Column			          Description
--	Student_id		        Student’s Unique ID (INT) (FOREIGN KEY)
--	Program_id		        Unique ID (INT) (FOREIGN KEY)
--	Completion            percentage	Completion status in percentage (INT) (1-100)
--	Last_date_accessed	  Latest date of accessing the program
+Table Name:  Enrolments
+Column: Enrolment_id, Student_id, Program_id, Date_enrolled, Status
+
+Table Name: Course Progress
+Column: Student_id, Program_id, Completion, Last_date_accessed
 
 ## Business Questions (Tasks)
 1.	List the top 10 students with the most completed courses.

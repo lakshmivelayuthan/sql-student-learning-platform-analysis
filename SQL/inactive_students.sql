@@ -7,7 +7,7 @@ FROM students s
 JOIN course_progress cp 
     ON s.student_id = cp.student_id
 GROUP BY s.student_id, s.student_name
-HAVING MAX(cp.last_date_accessed) <CURRENT_DATE - INTERVAL 30 DAY;
+HAVING MAX(cp.last_date_accessed) < CURRENT_DATE - INTERVAL 30 DAY;
 
 /* SQL Server */
 SELECT 

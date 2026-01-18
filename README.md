@@ -22,10 +22,9 @@ This is a SQL mini-project analysis of a learning platform on instructor credibi
 6.	Courses with highest drop rate.
 7.	Students who have completed ALL courses offered.
 8.	Most popular course category
-9.	Monthly new student registrations.
-10.	Average completion percentage per student.
-11.	Find students who dropped more than 3 courses.
-12.	Instructor with highest student engagement (total Enrolments across their courses).
+9.	Average completion percentage per student.
+10.	Find students who dropped more than 3 courses.
+11.	Instructor with highest student engagement (total Enrolments across their courses).
 
 ## Approach
 -SQL queries include joins, group by, subqueries, and aggregations.

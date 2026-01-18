@@ -10,8 +10,8 @@ This is a SQL mini-project analysis of a learning platform on instructor credibi
 | Students         | Student_id, Student_name, City, DOJ |
 | Programs         | Program_id, Title, Category, Instructor_id, Rating |
 | Instructors      | Instructor_id, Instructor_name, Experience |
-| Enrolments       | Enrolment_id, Student_id, Program_id, Date_enrolled, Status |
-| Course Progress  | Student_id, Program_id, Completion, Last_date_accessed |
+| Enrolments       | Enrolment_id, Student_id, Program_id, Date_enrolled, Status_ |
+| Course Progress  | Student_id, Program_id, Completion_percentage, Last_date_accessed |
 
 ## Business Questions (Tasks)
 1.	List the top 10 students with the most completed courses.

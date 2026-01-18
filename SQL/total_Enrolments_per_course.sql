@@ -1,9 +1,9 @@
 /*	Find the total number of Enrolments per course. */
 SELECT 
-    c.course_id,
-    c.title,
+    p.program_id,
+    p.title,
     COUNT(e.Enrolment_id) AS total_Enrolments
-FROM Courses c
-LEFT JOIN Enrolments e ON c.course_id = e.course_id
-GROUP BY c.course_id, c.title
+FROM programs p
+LEFT JOIN Enrolments e ON p.program_id = e.Program_id
+GROUP BY p.program_id, p.title
 ORDER BY total_Enrolments DESC;

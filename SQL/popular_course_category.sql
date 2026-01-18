@@ -2,8 +2,17 @@
 SELECT 
     category,
     COUNT(*) AS Enrolments
-FROM Courses c
-JOIN Enrolments e ON c.course_id = e.course_id
+FROM programs p
+JOIN Enrolments e ON p.program_id = e.Program_id
 GROUP BY category
 ORDER BY Enrolments DESC
 LIMIT 1;
+
+/* SQL Server */
+SELECT TOP 1
+    category,
+    COUNT(*) AS Enrolments
+FROM programs p
+JOIN Enrolments e ON p.program_id = e.Program_id
+GROUP BY category
+ORDER BY Enrolments DESC;
